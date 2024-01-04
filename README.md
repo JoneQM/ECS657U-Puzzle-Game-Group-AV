@@ -8,9 +8,9 @@ Game Title: The Puzzlers
 
 Project Description: The Puzzlers is an immersive 3D puzzle game that challenges your problem-solving skills. The game involves two players with different starting positions and colours who must navigate a maze-like environment to collect all the stars and successfully complete each level. Maze Adventurer offers an interactive and visually engaging experience where players can interact with objects in the environment to their advantage and help clear the level.
 
-Access the Web-GL Version: (NEED TO BE UPDATED)
+Access the Web-GL Version: (NEEDS TO BE UPDATED)
 
-You can play the game by following this link: (https://kbm977.github.io/ECS657U-ECS7003P/WebBuild/index.html) (NEED TO BE UPDATED)
+You can play the game by following this link: (https://kbm977.github.io/ECS657U-ECS7003P/WebBuild/index.html) (NEEDS TO BE UPDATED)
 
 How to play: Left click to move player one. Right click to move player two. Collect all the stars to complete the level (total 3 levels). When player one and player two collides, the player loses and the level resets
 
@@ -26,7 +26,7 @@ Collect all the stars to complete the current level and move on to the next diff
 -The player also loses and the level resets if 2 characters collide.
 -The player can interact with obstacles such as traps/spikes or tiles(blue/red) to stop or start the movement of characters. 
 
-(TO BE IMPLEMENTED)
+(YET TO BE IMPLEMENTED)
 -Objects such as switches, conveyor belts, tunnels and bridges can be used to alter movement or time it differently 
 -The player can put together pieces of objects in the environment in correct places to form new objects, such as new bridges, heavy blocks to hold down push buttons or timers to trigger interactions.
 
