@@ -12,12 +12,22 @@ Access the Web-GL Version: (NEED TO BE UPDATED)
 
 You can play the game by following this link: (https://kbm977.github.io/ECS657U-ECS7003P/WebBuild/index.html) (NEED TO BE UPDATED)
 
-How to play: Left click to move player one. Right click to move player two. Collect all the stars to complete the level. 
-Interactable environments:
+How to play: Left click to move player one. Right click to move player two. Collect all the stars to complete the level (total 3 levels). When player one and player two collides, the player loses and the level resets
+
+
+Key Features:
+
+-Interactive Environment:
 Blue tiles will teleport player to its corresponding waypoint portal (the corresponding waypoint portal will have a black arrow indicator to help with visibility)
 Red tiles will deactivate its corresponding traps (the traps will be highlighted for its respective red tiles) - Note: By standing on top of a red tile, its respective traps will be indefinitely deactivated until player steps off the red tile, in which case the traps will be activated again after a certain delay
 Collect all the stars to complete the current level and move on to the next difficulty (total 3 levels)
 
-Key Features:
+-Each character also has a different goal position in the level. When all characters reach their goal, the player wins.
+-The player also loses and the level resets if 2 characters collide.
+-The player can interact with obstacles such as traps/spikes or tiles(blue/red) to stop or start the movement of characters. 
 
-Interactive Environment: Players can interact with various objects in the game world to manipulate their positions or change their state. Blocky 3D World: Maze Adventurer unfolds in a captivating blocky 3D world, complete with unique starting positions for each character. The characters are connected to a rail system, and they move autonomously along tracks when the player takes control. Obstacles and Traps: The game introduces obstacles and traps that can hinder character movement or alter their trajectories. Colliding with obstacles or traps will reset the level, and if two characters collide, the player loses. (To be implemented.) Character Goals: Each character has a different goal position within the level. To win the game, all characters must reach their respective goals. (To be implemented.) Dynamic Elements: Players can employ various elements, including switches, conveyor belts, tunnels, and bridges, to manipulate character movements or control timing. (To be implemented.) Object Assembly: The game features the option to assemble object pieces in the environment to create new objects like bridges, heavy blocks for triggering switches, or timers to initiate interactions.(To be implemented.)
+(TO BE IMPLEMENTED)
+-Objects such as switches, conveyor belts, tunnels and bridges can be used to alter movement or time it differently 
+-The player can put together pieces of objects in the environment in correct places to form new objects, such as new bridges, heavy blocks to hold down push buttons or timers to trigger interactions.
+
+
