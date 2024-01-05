@@ -56,5 +56,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "Puzzle Game.sln"
+    "dotnet.defaultSolution": "ECS657U-Puzzle-Game-Group-AV.sln"
 }
