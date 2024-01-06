@@ -2,7 +2,7 @@
 GitHub Repo for Group AV's Puzzle Game
 
 
-Game concept chosen is concept 4 and project pathway 2, Puzzle.
+Game concept chosen is concept 4 and project pathway is 2, Puzzle.
 
 Game Title: The Puzzlers
 
