@@ -16,7 +16,7 @@ public class ScenesManager : MonoBehaviour
     {
         MainMenu,
         Level1,
-        Demo,
+        Level2,
         Level3,
     }
 

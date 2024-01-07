@@ -1841,7 +1841,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 161311121}
-  offset: {x: 0, y: 0, z: 0}
+  offset: {x: 2, y: 0, z: 9.5}
   mainCamera: {fileID: 1881278431}
   label: {fileID: 120513903}
 --- !u!114 &120513903
