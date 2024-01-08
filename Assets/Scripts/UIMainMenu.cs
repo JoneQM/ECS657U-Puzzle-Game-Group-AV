@@ -17,7 +17,10 @@ public class UIMainMenu : MonoBehaviour
     {
         ScenesManager.Instance.LoadNewGame();
     }
-
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
 }
 
 
