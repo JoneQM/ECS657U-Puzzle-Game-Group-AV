@@ -2,7 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
-using System.Linq;
+using UnityEngine.SceneManagement;
+using System.Linq; 
 
 public class StarManager : MonoBehaviour
 {
@@ -16,7 +17,6 @@ public class StarManager : MonoBehaviour
         totalStars = Resources.FindObjectsOfTypeAll<Star>().Where(star => star.gameObject.scene.buildIndex != -1).Count();
         UpdateStarCounterUI();
     }
-
 
     private void OnEnable()
     {
@@ -46,20 +46,25 @@ public class StarManager : MonoBehaviour
         // Check if all stars are collected
         if (collectedStars >= totalStars)
         {
-            // All stars collected - proceed to load the next scene
-            int currentSceneIndex = UnityEngine.SceneManagement.SceneManager.GetActiveScene().buildIndex;
-            int nextSceneIndex = currentSceneIndex + 1;
+            // All stars collected - proceed to load the next map or level
+            Debug.Log("All stars collected! Proceed to the next level.");
 
-            if (nextSceneIndex < UnityEngine.SceneManagement.SceneManager.sceneCountInBuildSettings)
+            // Determine the current scene's name
+            string currentSceneName = SceneManager.GetActiveScene().name;
+
+            // Check if the current scene is the "Tutorial" scene
+            if (currentSceneName == "Tutorial")
             {
-                UnityEngine.SceneManagement.SceneManager.LoadScene(nextSceneIndex);
+                // Load the "Main Menu" scene
+                SceneManager.LoadScene("MainMenu");
             }
             else
             {
-                // No more scenes to load (end of the game, for example)
-                Debug.Log("No more scenes to load.");
+                // Load the next scene
+                SceneManager.LoadScene("Level" + (SceneManager.GetActiveScene().buildIndex + 1));
             }
         }
     }
+
 
 }

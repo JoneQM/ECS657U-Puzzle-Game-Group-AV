@@ -15,6 +15,8 @@ public class ScenesManager : MonoBehaviour
     public enum Scene
     {
         MainMenu,
+
+        Tutorial,
         Level1,
         Level2,
         Level3,

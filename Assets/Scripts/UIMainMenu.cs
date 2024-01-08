@@ -6,11 +6,13 @@ using UnityEngine.UI;
 public class UIMainMenu : MonoBehaviour
 {
     [SerializeField] Button newGame;
+    [SerializeField] Button tutorialButton;
 
     // Start is called before the first frame update
     void Start()
     {
         newGame.onClick.AddListener(StartNewGame);
+        tutorialButton.onClick.AddListener(StartTutorial);
     }
 
     private void StartNewGame()
@@ -18,14 +20,13 @@ public class UIMainMenu : MonoBehaviour
         ScenesManager.Instance.LoadNewGame();
     }
 
+    private void StartTutorial()
+    {
+        ScenesManager.Instance.LoadScene(ScenesManager.Scene.Tutorial);
+    }
+
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
 }
-
-
-// public class MainMenu : MonoBehaviour
-// {
-//     public void PlayGame()
-//     {
-//         SceneManager.LoadSceneAsync(1);
-//     }
-
-// }
