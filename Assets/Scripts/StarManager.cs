@@ -58,11 +58,23 @@ public class StarManager : MonoBehaviour
                 // Load the "Main Menu" scene
                 SceneManager.LoadScene("MainMenu");
             }
-            else
+            else if (currentSceneName == "Level1")
+            {
+                // Load the "Main Menu" scene
+                SceneManager.LoadScene("Level2");
+            }
+            else 
             {
                 // Load the next scene
-                SceneManager.LoadScene("Level" + (SceneManager.GetActiveScene().buildIndex + 1));
+                SceneManager.LoadScene("Level3");
             }
+
+
+            // else 
+            // {
+            //     // Load the next scene
+            //     SceneManager.LoadScene("Level" + (SceneManager.GetActiveScene().buildIndex + 1));
+            // }
         }
     }
 
