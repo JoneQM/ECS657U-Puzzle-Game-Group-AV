@@ -23,10 +23,10 @@ How to play & RULES:
 
 Key Features:
 
--Interactive Environment:
-Blue tiles (teleport initiators) will teleport player to its corresponding waypoint portal - the corresponding waypoint portal will have a black arrow indicator to help with visibility
-Red tiles (trap deactivators) will deactivate their corresponding traps - the traps will be highlighted in blue to help with visibility) // Note: By standing on top of a red tile, its respective traps will be indefinitely deactivated until the player steps off the red tile, in which case the traps will be activated again after a certain delay
-Yellow tiles (bridge constructors) will construct a bridge path to a mini-island that is unconnected to the main island //Note: Player will remain unaware of the bridge path unless they interact with it
+Interactive Environment:
+- Blue tiles (teleport initiators) will teleport player to its corresponding waypoint portal - the corresponding waypoint portal will have a black arrow indicator to help with visibility
+- Red tiles (trap deactivators) will deactivate their corresponding traps - the traps will be highlighted in blue to help with visibility) // Note: By standing on top of a red tile, its respective traps will be indefinitely deactivated until the player steps off the red tile, in which case the traps will be activated again after a certain delay
+- Yellow tiles (bridge constructors) will construct a bridge path to a mini-island that is unconnected to the main island //Note: Player will remain unaware of the bridge path unless they interact with it
 
 - By Jone Lau
 
