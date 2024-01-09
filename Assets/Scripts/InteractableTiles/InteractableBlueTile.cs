@@ -1,7 +1,6 @@
 using UnityEngine;
 using UnityEngine.AI;
 using TMPro; 
-
 public class Teleporter : MonoBehaviour
 {
     public LayerMask playerLayers;
