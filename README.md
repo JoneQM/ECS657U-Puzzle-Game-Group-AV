@@ -24,17 +24,10 @@ How to play & RULES:
 Key Features:
 
 -Interactive Environment:
-Blue tiles will teleport player to its corresponding waypoint portal (the corresponding waypoint portal will have a black arrow indicator to help with visibility)
-Red tiles will deactivate its corresponding traps (the traps will be highlighted for its respective red tiles) - Note: By standing on top of a red tile, its respective traps will be indefinitely deactivated until player steps off the red tile, in which case the traps will be activated again after a certain delay
+Blue tiles (teleport initiators) will teleport player to its corresponding waypoint portal - the corresponding waypoint portal will have a black arrow indicator to help with visibility
+Red tiles (trap deactivators) will deactivate their corresponding traps - the traps will be highlighted in blue to help with visibility) // Note: By standing on top of a red tile, its respective traps will be indefinitely deactivated until the player steps off the red tile, in which case the traps will be activated again after a certain delay
+Yellow tiles (bridge constructors) will construct a bridge path to a mini-island that is unconnected to the main island //Note: Player will remain unaware of the bridge path unless they interact with it
 
-Collect all the stars to complete the current level and move on to the next difficulty (total 3 levels)
-
--Each character also has a different goal position in the level. When all characters reach their goal, the player wins.
--The player also loses and the level resets if 2 characters collide.
--The player can interact with obstacles such as traps/spikes or tiles(blue/red) to stop or start the movement of characters. 
-
-(YET TO BE IMPLEMENTED)
--Objects such as switches, conveyor belts, tunnels and bridges can be used to alter movement or time it differently 
--The player can put together pieces of objects in the environment in correct places to form new objects, such as new bridges, heavy blocks to hold down push buttons or timers to trigger interactions.
+- By Jone Lau
 
 
