@@ -51,4 +51,3 @@ public class InteractableTile : MonoBehaviour
         ToggleTraps(true); // Reactivate traps
     }
 }
-
