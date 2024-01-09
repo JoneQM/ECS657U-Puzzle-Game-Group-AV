@@ -11,7 +11,7 @@ public class BackgroundMusic : MonoBehaviour
 
         if (existingInstances.Length > 1)
         {
-            Destroy(gameObject); // Destroys duplicate instances
+            Destroy(gameObject); 
         }
         else
         {
@@ -20,8 +20,8 @@ public class BackgroundMusic : MonoBehaviour
             // Plays the background music when the game starts
             if (backgroundMusic != null)
             {
-                backgroundMusic.playOnAwake = true; // Ensure it plays on start
-                backgroundMusic.loop = true; // Enables looping
+                backgroundMusic.playOnAwake = true; 
+                backgroundMusic.loop = true; 
                 backgroundMusic.Play();
             }
         }

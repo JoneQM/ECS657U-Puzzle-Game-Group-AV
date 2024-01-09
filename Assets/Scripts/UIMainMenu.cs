@@ -7,8 +7,6 @@ public class UIMainMenu : MonoBehaviour
 {
     [SerializeField] Button newGame;
     [SerializeField] Button tutorialButton;
-
-    // Start is called before the first frame update
     void Start()
     {
         newGame.onClick.AddListener(StartNewGame);

@@ -10,7 +10,8 @@ public class ShowTextWhenMainCamera : MonoBehaviour
     private void Start()
     {
         textMeshPro = GetComponent<TextMeshProUGUI>();
-        textMeshPro.enabled = false; // Start with the text hidden
+        // Start with the text hidden
+        textMeshPro.enabled = false; 
     }
 
     private void Update()
@@ -19,11 +20,13 @@ public class ShowTextWhenMainCamera : MonoBehaviour
         {
             if (Camera.main == mainCamera)
             {
-                textMeshPro.enabled = true; // Enable the text when the main camera is active
+                // Enable the text when the main camera is active
+                textMeshPro.enabled = true; 
             }
             else
             {
-                textMeshPro.enabled = false; // Disable the text for other cameras
+                // Disable the text for other cameras
+                textMeshPro.enabled = false; 
             }
         }
     }

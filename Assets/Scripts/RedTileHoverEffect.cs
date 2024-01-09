@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class RedTileHoverEffect : MonoBehaviour
 {
-    public GameObject[] associatedTraps; // Assign in the inspector
-    public Material outlineMaterial; // Assign a material with an outline effect in the inspector
-    private Material[] originalMaterials; // To store the original materials
+    public GameObject[] associatedTraps; 
+    public Material outlineMaterial; 
+    private Material[] originalMaterials; 
 
     void Start()
     {

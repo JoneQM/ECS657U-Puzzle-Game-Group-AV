@@ -5,8 +5,8 @@ using System.Collections.Generic;
 
 public class InteractableYellowTile : MonoBehaviour
 {
-    public LayerMask playerLayer; // Set this in the inspector to the player's layer
-    private NavMeshSurface navMeshSurface; // Reference to the NavMeshSurface
+    public LayerMask playerLayer; 
+    private NavMeshSurface navMeshSurface; 
     [SerializeField]
     private GameObject preMadePath;
 

@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Star : MonoBehaviour
 {
-    // Create a static event to notify when a star is collected
     public static event System.Action OnStarCollected;
 
     private void OnTriggerEnter(Collider other)

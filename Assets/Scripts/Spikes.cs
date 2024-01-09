@@ -16,6 +16,6 @@ public class SpikeTrap : MonoBehaviour
     {
         // Enable or disable the collider and change the visual representation accordingly
         spikeCollider.enabled = state;
-        spikeRenderer.enabled = state; // Assuming you want to hide the spikes visually when deactivated
+        spikeRenderer.enabled = state; 
     }
 }

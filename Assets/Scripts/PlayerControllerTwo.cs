@@ -4,7 +4,8 @@ using UnityEngine.AI;
 public class PlayerControllerTwo : MonoBehaviour
 {
     private bool isTeleported = false;
-    private Camera cam; // Change this to private
+    private Camera cam; 
+    private GameManager gameManager;
 
     public NavMeshAgent agent;
     public float constantSpeed = 2f;
@@ -16,17 +17,20 @@ public class PlayerControllerTwo : MonoBehaviour
 
         // Register for the onPreCull event to dynamically update the cam variable
         Camera.onPreCull += UpdateCam;
+
+        // Find the GameManager in the scene
+        gameManager = Object.FindFirstObjectByType<GameManager>();
     }
 
     void OnDestroy()
     {
-        // Unregister the event when the script is destroyed to prevent memory leaks
+        
         Camera.onPreCull -= UpdateCam;
     }
 
     private void UpdateCam(Camera activeCam)
     {
-        cam = activeCam; // Update the cam variable with the currently active camera
+        cam = activeCam; 
     }
 
     void Update()
@@ -51,4 +55,20 @@ public class PlayerControllerTwo : MonoBehaviour
     {
         isTeleported = teleported;
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("PlayerOne"))
+        {
+            Debug.Log("Player 2 collided with Player 1"); 
+            // Handle collision with Player 1 (e.g., game over)
+            if (gameManager != null)
+            {
+                gameManager.PlayerCollision();
+                gameObject.SetActive(false);
+            }
+        }
+    }
 }
+
+

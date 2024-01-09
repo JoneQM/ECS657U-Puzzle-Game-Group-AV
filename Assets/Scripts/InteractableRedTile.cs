@@ -5,10 +5,10 @@ using System.Collections.Generic;
 
 public class InteractableTile : MonoBehaviour
 {
-    public LayerMask playerLayer; // Set this in the inspector to the player's layer
-    public List<SpikeTrap> associatedSpikeTraps; // Use a list to hold multiple traps
-    public float trapActiveDelay = 5f; // Time in seconds for the traps to be active again
-    private NavMeshSurface navMeshSurface; // Reference to the NavMeshSurface
+    public LayerMask playerLayer; 
+    public List<SpikeTrap> associatedSpikeTraps; 
+    public float trapActiveDelay = 5f; 
+    private NavMeshSurface navMeshSurface; 
 
     private void Start()
     {
@@ -22,8 +22,10 @@ public class InteractableTile : MonoBehaviour
         if ((playerLayer.value & (1 << other.gameObject.layer)) != 0)
         {
             Debug.Log("Player has interacted with the red tile.");
-            ToggleTraps(false); // Deactivate traps
-            StartCoroutine(ReactivateTrapsAfterDelay()); // Reactivate traps after delay
+            // Deactivate traps
+            ToggleTraps(false); 
+            // Reactivate traps after delay
+            StartCoroutine(ReactivateTrapsAfterDelay()); 
         }
     }
 
@@ -48,6 +50,7 @@ public class InteractableTile : MonoBehaviour
     {
         // Wait for the specified delay
         yield return new WaitForSeconds(trapActiveDelay);
-        ToggleTraps(true); // Reactivate traps
+        // Reactivate traps
+        ToggleTraps(true); 
     }
 }
